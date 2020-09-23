@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerador de senha</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Gerador de senha</h1>
+        </header>
+
+        <div class="form">
+            <label for="">Qual tamanho da senha?</label>
+            <input
+                type="number"
+                placeholder="Informe um tamanho"
+                id="pass"
+                min="0"
+                max="15"
+            />
+            <button onclick="generatePass()">Gerar senha</button>
+        </div>
+
+        <div class="result">
+            <span id="newPassword">Clique em gerar</span>
+        </div>
+
+        <footer>
+            <span>Labz Soluções</span>
+        </footer>
+        <script src="./src/script.js"></script>
+    </body>
+</html>
